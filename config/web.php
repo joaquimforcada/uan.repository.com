@@ -38,6 +38,29 @@ $config = [
             ],
         ],
         'db' => require(__DIR__ . '/db.php'),
+        'view' => [
+            'theme' => [
+                'pathMap' => ['@app/views' => 'themes/spacex-yii2-1475180137'],
+                'baseUrl'   => 'themes/spacex-yii2-1475180137'
+            ]
+            /*'theme' => [
+                'pathMap' => ['@app/views' => 'themes/greenery'],
+                'baseUrl'   => 'themes/greenery'
+            ]*/
+        ],
+        'i18n' => [
+            'translations' => [
+                'app*' => [
+                    'class' => 'yii\i18n\PhpMessageSource',
+                    'basePath' => '@app/messages',
+                    'sourceLanguage' => 'en-US',
+                    'fileMap' => [
+                        'app' => 'app.php',
+                        'app/error' => 'error.php',
+                    ],
+                ],
+            ],
+        ],
         /*
         'urlManager' => [
             'enablePrettyUrl' => true,
