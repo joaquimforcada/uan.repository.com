@@ -7,9 +7,9 @@ $this->title = 'My Yii Application';
 <div class="site-index">
 
     <div >
-        <h2>Welcome</h2>
+        <h2><?php echo Yii::t('app','w_Welomce'); ?></h2>
 
-        <p class="lead">"Una estrella es una esfera de gas que mantiene su forma gracias al equilibro entre la fuerza de la gravedad, que contiene la materia, y la presión del plasma, que tiende a expandirla..."</p>
+        <p class="lead"><?php echo Yii::t('app','k_StarDefinition'); ?></p>
 
     </div>
 

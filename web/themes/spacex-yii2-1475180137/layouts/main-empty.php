@@ -4,7 +4,7 @@ use yii\helpers\Html;
 use yii\widgets\Menu;
 use yii\widgets\Breadcrumbs;
 
-\Yii::$app->name = 'Universal astral naming';
+\Yii::$app->name = Yii::t('app', 'w_AppName');
 $sentenceRegister = 'Register a star in U.A.N.';
 
 /**
@@ -91,9 +91,9 @@ $sentenceRegister = 'Register a star in U.A.N.';
     				        ['label' => 'Home', 'url' => ['site/index']],
                             ['label' => 'Register a star', 'url' => ['register/index']],
                             ['label' => 'Search a star', 'url' => ['search/index']],
-                            ['label' => 'Ideas', 'url' => ['ideas/index']],
     				        ['label' => 'About UAN', 'url' => ['site/about']],
-    				        ['label' => 'Contact', 'url' => ['site/contact']],
+    				        ['label' => 'Contact us', 'url' => ['site/contact']],
+                            ['label' => 'Language', 'url' => ['site/language']],
 
     				    ],
       				]);
@@ -121,7 +121,8 @@ $sentenceRegister = 'Register a star in U.A.N.';
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <p>Copyright &copy; <?php echo Html::encode(\Yii::$app->name); ?> 2014 - made with <a href="https://themefactory.net">ThemeFactory.net</a>.</p>
+                    <p>Copyright &copy; <?php echo Html::encode(\Yii::$app->name); ?> 2014 - made with
+                        <a target="_blank" href="http://www.yiiframework.com/">Yii2</a>.</p>
                 </div>
             </div>
         </div>
